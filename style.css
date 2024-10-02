@@ -1,0 +1,86 @@
+/* Bakgrund och layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('space-background2.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+  }
+  
+  /* Spelcontainer */
+  #gameContainer {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+/* Styling för rubriken */
+#gameTitle {
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Skugga för texten */
+  }
+  
+  /* Justera spelcontainern under rubriken */
+  #gameContainer {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Lägger till avstånd mellan rubriken och spelområdet */
+  }
+  
+  
+  /* Poängvisning */
+  #scoreboard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+  }
+  
+  /* Game Over Screen */
+  #gameOverScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Knappar */
+  button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff7961;
+  }
+  
+  
